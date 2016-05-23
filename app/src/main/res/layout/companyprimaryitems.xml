@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="4dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:background="#FFFFFF"
+       android:gravity="center"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="Company ID"
+           android:paddingRight="5dp"
+           android:textColor="@color/navigationBarColor"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:id="@+id/companyid"
+           android:visibility="invisible" />
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="Company Name"
+           android:paddingRight="5dp"
+           android:drawableLeft="@drawable/name"
+           android:textColor="@color/navigationBarColor"
+           android:layout_gravity="center_horizontal"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:id="@+id/companyname" />
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="Company Owner"
+           android:paddingRight="5dp"
+           android:drawableLeft="@drawable/person"
+           android:layout_gravity="center_horizontal"
+           android:textColor="@color/navigationBarColor"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:id="@+id/companyowner" />
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="StartDate"
+           android:paddingRight="5dp"
+           android:drawableLeft="@drawable/startdate"
+           android:textColor="@color/navigationBarColor"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/comapnystartdate" />
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="CompanyDesc"
+           android:paddingRight="5dp"
+           android:textColor="@color/navigationBarColor"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/companydesc"
+           android:visibility="gone" />
+       <TextView
+           android:layout_width="match_parent"
+           android:hint="Companylist"
+           android:paddingRight="5dp"
+           android:textColor="@color/navigationBarColor"
+           android:textColorHint="@color/navigationBarColor"
+           android:layout_height="match_parent"
+           android:id="@+id/comapanylists"
+           android:layout_gravity="center_horizontal"
+           android:visibility="gone" />
+       <LinearLayout
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:hint="About"
+               android:id="@+id/about"
+               android:layout_weight="0.12"
+               android:drawableLeft="@drawable/info"
+               android:layout_gravity="center_horizontal"
+               android:textColor="@color/navigationBarColor"
+               android:textColorHint="@color/navigationBarColor"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:hint="Department"
+               android:drawableLeft="@drawable/dept"
+               android:id="@+id/dept"
+               android:layout_gravity="center_horizontal"
+               android:textColor="@color/navigationBarColor"
+               android:textColorHint="@color/navigationBarColor"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.06" />
+
+       </LinearLayout>
+       </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
